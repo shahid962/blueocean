@@ -5,7 +5,7 @@ pipeline {
             parallel {
                 stage('mvn build') {
                     steps {
-                        sh 'mvn clean install'
+                        echo "execute mvn process"
                     }
                 }
                 stage('Upload Artifacts') {
